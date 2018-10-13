@@ -1,0 +1,8 @@
+com\proj\RestController\FriendController.class
+com\proj\RestController\NotificationController.class
+com\proj\RestController\UserController.class
+com\proj\RestController\ProfilePicController.class
+com\proj\RestController\SockController.class
+com\proj\RestController\JobController.class
+com\proj\RestController\BlogCommentController.class
+com\proj\RestController\BlogPostController.class

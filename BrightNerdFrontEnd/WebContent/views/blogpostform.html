@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+</style>
+</head>
+
+
+<body>
+<div class="container">
+
+<form>
+<h2>BlogPost Form</h2>
+<br>
+<h4>Enter BlogDetails below:</h4>
+
+<table>
+<tr>
+<td>Blog Title</td>
+<td><input type="text" ng-model="blog.blogTitle"></td>
+</tr>
+<tr>
+<td>Blog content</td>
+<td><textarea ng-model="blog.blogContent"></textarea></td>
+</tr>
+<tr>
+<td>
+<button ng-click="addBlogPost(blog)">Add Blog</button>
+</td>
+</tr>
+</table>
+
+
+</form>
+</div>
+
+</body>
