@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 
 @Entity
@@ -12,6 +15,8 @@ public class User {
 	@Id
 private String email;
 	@Column(nullable=false)
+	@NotEmpty(message = "Please enter your password.")
+    @Size(min = 6, max = 15, message = "Your password must be between 6 and 15 characters")
 private String password;
 	@Column(nullable=false)
 private String firstname;

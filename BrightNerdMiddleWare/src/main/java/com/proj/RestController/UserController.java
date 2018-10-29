@@ -36,7 +36,7 @@ public class UserController {
 		userDAO.registration(user);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 		}catch(Exception e){
-			e.printStackTrace();
+		
 			ErrorClazz errorClazz=new ErrorClazz(1,"Something went wrong. "+e.getMessage());
 			return new ResponseEntity<ErrorClazz>(errorClazz,HttpStatus.INTERNAL_SERVER_ERROR);
 		}

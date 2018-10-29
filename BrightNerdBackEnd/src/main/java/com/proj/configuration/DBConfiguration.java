@@ -24,7 +24,7 @@ import com.proj.models.User;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages="com.socio.*")
+@ComponentScan(basePackages="com.proj.*")
 public class DBConfiguration {
 	public DBConfiguration(){
 		 System.out.println("DBConfiguration class is instantiated"); 
